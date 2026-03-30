@@ -2,12 +2,12 @@ import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
 
 const navLinks = [
-  { label: "Home", href: "#home" },
+  { label: "Início", href: "#home" },
   { label: "Menu", href: "#menu" },
-  { label: "About", href: "#about" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Events", href: "#events" },
-  { label: "Contact", href: "#contact" },
+  { label: "Sobre", href: "#about" },
+  { label: "Galeria", href: "#gallery" },
+  { label: "Eventos", href: "#events" },
+  { label: "Contato", href: "#contact" },
 ];
 
 const Header = () => {
@@ -27,7 +27,7 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
-        <a href="#home" className="font-serif text-2xl font-bold text-gradient-gold tracking-wide">
+        <a href="#home" className="font-serif text-2xl font-bold text-primary tracking-wide">
           Maison<span className="text-foreground">HD</span>
         </a>
 
@@ -44,14 +44,12 @@ const Header = () => {
         </nav>
 
         <div className="hidden lg:flex items-center gap-4">
-          <a href="tel:+5511999999999" className="text-foreground/70 hover:text-primary transition-colors">
-            <Phone className="w-4 h-4" />
-          </a>
+          
           <a
             href="#reservation"
-            className="bg-gradient-gold hover:bg-gradient-gold-hover text-primary-foreground px-6 py-2.5 rounded-lg text-sm font-semibold tracking-wide transition-all duration-300 shadow-gold hover:shadow-gold-lg"
+            className="bg-primary hover:bg-gradient-gold-hover text-primary-foreground px-6 py-2.5 rounded-lg text-sm font-semibold tracking-wide transition-all duration-300 shadow-gold hover:shadow-gold-lg"
           >
-            Reserve a Table
+           Reserve uma mesa
           </a>
         </div>
 
