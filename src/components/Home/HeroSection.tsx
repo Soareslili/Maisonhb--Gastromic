@@ -40,7 +40,7 @@ const Hero = () => {
                 </div>
 
                 <div className="flex sm:flex-row gap-4">
-                    <Link to="/reservation">
+                    <Link to="/reserve">
                         <Button
                             variant="outline"
                             size="lg"

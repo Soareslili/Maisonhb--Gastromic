@@ -1,4 +1,4 @@
-import Header from "./components/Header"
+import Header from "./components/Layout/Header"
 import HeroSection from "./components/Home/HeroSection"
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AboutSection from "./pages/AboutSection";
 import ReservationForm from "./components/Home/ReservationForm";
+import MenuSection from "./components/Services/MenuSection";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<HeroSection />} />
+            <Route path="/menu" element={<MenuSection />} />
             <Route path="/about" element={<AboutSection />} />
             <Route path="/reserve" element={<ReservationForm />} />
           </Routes>
