@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X} from "lucide-react";
+import { Link, } from "react-router-dom";
 
 const navLinks = [
-  { label: "Início", href: "#home" },
+  { label: "Início", href: "/" },
   { label: "Menu", href: "#menu" },
-  { label: "Sobre", href: "#about" },
+  { label: "Sobre", href: "/about" },
   { label: "Galeria", href: "#gallery" },
   { label: "Eventos", href: "#events" },
   { label: "Contato", href: "#contact" },
@@ -27,19 +28,19 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
-        <a href="#home" className="font-serif text-2xl font-bold text-primary tracking-wide">
+        <Link to="/" className="font-serif text-2xl font-bold text-primary tracking-wide">
           Maison<span className="text-foreground">HD</span>
-        </a>
+        </Link>
 
         <nav className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.label}
-              href={link.href}
+              to={link.href}
               className="text-sm font-sans-body font-medium text-foreground/80 hover:text-primary transition-colors duration-300 tracking-wide uppercase"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
