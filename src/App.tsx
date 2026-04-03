@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AboutSection from "./pages/AboutSection";
 import ReservationForm from "./components/Home/ReservationForm";
 import MenuSection from "./components/Services/MenuSection";
+import GallerySection from "./pages/GallerySection";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             <Route path="/menu" element={<MenuSection />} />
             <Route path="/about" element={<AboutSection />} />
             <Route path="/reserve" element={<ReservationForm />} />
+            <Route path="/gallery" element={<GallerySection />} />
           </Routes>
         </main>
       </div>
