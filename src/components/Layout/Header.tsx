@@ -46,12 +46,12 @@ const Header = () => {
 
         <div className="hidden lg:flex items-center gap-4">
           
-          <a
-            href="/reserve"
+          <Link
+            to="/reserve"
             className="bg-primary hover:bg-gradient-gold-hover text-primary-foreground px-6 py-2.5 rounded-lg text-sm font-semibold tracking-wide transition-all duration-300 shadow-gold hover:shadow-gold-lg hover:bg-popover hover:text-white hover:border border-white hover:transition transform hover:scale-105"
           >
            Reserve uma mesa
-          </a>
+          </Link>
         </div>
 
         <button

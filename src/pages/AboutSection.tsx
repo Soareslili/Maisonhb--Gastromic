@@ -2,6 +2,7 @@ import { Check } from "lucide-react";
 import aboutDish from "../assets/about-dish.png";
 import chefAction from "../assets/chef-action.png";
 import ScrollReveal from "../components/Home/ScrollReveal";
+import { Link } from "react-router-dom";
 
 const features = [
   "Ingredientes premium selecionados manualmente",
@@ -41,12 +42,12 @@ const AboutSection = () => {
                 ))}
               </div>
 
-              <a
-                href="/gallery"
+              <Link
+                to="/gallery"
                 className="inline-block border border-primary/40 text-foreground px-8 py-3 rounded-lg font-semibold tracking-wide transition-all duration-300 hover:bg-primary/10 hover:border-primary text-sm"
               >
                 Ver Galeria
-              </a>
+              </Link>
             </div>
           </ScrollReveal>
 
