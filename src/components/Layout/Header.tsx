@@ -7,8 +7,8 @@ const navLinks = [
   { label: "Menu", href: "/menu" },
   { label: "Sobre", href: "/about" },
   { label: "Galeria", href: "/gallery" },
-  { label: "Eventos", href: "#events" },
-  { label: "Contato", href: "#contact" },
+  { label: "Depoimentos", href: "/testimonials" },
+  { label: "Contato", href: "/contact" },
 ];
 
 const Header = () => {
@@ -47,8 +47,8 @@ const Header = () => {
         <div className="hidden lg:flex items-center gap-4">
           
           <a
-            href="#reservation"
-            className="bg-primary hover:bg-gradient-gold-hover text-primary-foreground px-6 py-2.5 rounded-lg text-sm font-semibold tracking-wide transition-all duration-300 shadow-gold hover:shadow-gold-lg"
+            href="/reserve"
+            className="bg-primary hover:bg-gradient-gold-hover text-primary-foreground px-6 py-2.5 rounded-lg text-sm font-semibold tracking-wide transition-all duration-300 shadow-gold hover:shadow-gold-lg hover:bg-popover hover:text-white hover:border border-white hover:transition transform hover:scale-105"
           >
            Reserve uma mesa
           </a>
@@ -76,7 +76,7 @@ const Header = () => {
               </a>
             ))}
             <a
-              href="#reservation"
+              href="/reserve"
               onClick={() => setMobileOpen(false)}
               className="bg-gradient-gold text-primary-foreground px-6 py-2.5 rounded-lg text-sm font-semibold text-center shadow-gold"
             >
