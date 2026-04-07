@@ -65,14 +65,14 @@ const Header = () => {
         <div className="lg:hidden bg-background/98 backdrop-blur-md border-t border-border animate-fade-in">
           <div className="flex flex-col px-6 py-4 gap-4">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.label}
-                href={link.href}
+                to={link.href}
                 onClick={() => setMobileOpen(false)}
                 className="text-foreground/80 hover:text-primary transition-colors text-sm uppercase tracking-wide"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
             <Link
               to="/reserve"
