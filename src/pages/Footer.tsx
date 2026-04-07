@@ -1,5 +1,6 @@
 
 import {  InstagramLogoIcon } from "@radix-ui/react-icons";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="py-12 border-t border-border bg-[#0B0C10]">
@@ -20,13 +21,13 @@ const Footer = () => {
             </h4>
             <div className="flex flex-col gap-3">
               {["Início", "Menu", "Sobre", "Galeria", "Depoimento", "Contato"].map((link) => (
-                <a
+                <Link
                   key={link}
-                  href={`/${link.toLowerCase()}`}
+                  to={`/${link.toLowerCase()}`}
                   className="text-muted-foreground hover:text-primary transition-colors text-sm"
                 >
                   {link}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
