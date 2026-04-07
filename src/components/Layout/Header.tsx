@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X} from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Link, } from "react-router-dom";
 
 const navLinks = [
@@ -23,9 +23,8 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? "bg-background/95 backdrop-blur-md shadow-gold" : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "bg-background/95 backdrop-blur-md shadow-gold" : "bg-transparent"
+        }`}
     >
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
         <Link to="/" className="font-serif text-2xl font-bold text-primary tracking-wide">
@@ -45,12 +44,12 @@ const Header = () => {
         </nav>
 
         <div className="hidden lg:flex items-center gap-4">
-          
+
           <Link
             to="/reserve"
             className="bg-primary hover:bg-gradient-gold-hover text-primary-foreground px-6 py-2.5 rounded-lg text-sm font-semibold tracking-wide transition-all duration-300 shadow-gold hover:shadow-gold-lg hover:bg-popover hover:text-white hover:border border-white hover:transition transform hover:scale-105"
           >
-           Reserve uma mesa
+            Reserve uma mesa
           </Link>
         </div>
 
@@ -75,13 +74,13 @@ const Header = () => {
                 {link.label}
               </a>
             ))}
-            <a
-              href="/reserve"
+            <Link
+              to="/reserve"
               onClick={() => setMobileOpen(false)}
-              className="bg-gradient-gold text-primary-foreground px-6 py-2.5 rounded-lg text-sm font-semibold text-center shadow-gold"
+              className="bg-primary text-primary-foreground px-6 py-2.5 rounded-lg text-sm font-semibold text-center shadow-gold"
             >
-              Reserve a Table
-            </a>
+              Reserve uma mesa
+            </Link>
           </div>
         </div>
       )}
