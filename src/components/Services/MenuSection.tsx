@@ -50,7 +50,7 @@ const DishesSection = () => {
           </div>
         </ScrollReveal>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {dishes.map((dish, i) => (
             <ScrollReveal key={dish.name} delay={i * 100}>
               <div className="group bg-card rounded-2xl overflow-hidden border border-border hover:border-primary/30 transition-all duration-500 hover:shadow-gold">

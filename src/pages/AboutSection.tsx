@@ -42,7 +42,7 @@ const AboutSection = () => {
               </div>
 
               <a
-                href="#gallery"
+                href="/gallery"
                 className="inline-block border border-primary/40 text-foreground px-8 py-3 rounded-lg font-semibold tracking-wide transition-all duration-300 hover:bg-primary/10 hover:border-primary text-sm"
               >
                 Ver Galeria
